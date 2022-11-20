@@ -1,0 +1,197 @@
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter-Medium.ttf);
+    font-weight: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}:root{
+    --size: 700px;
+    --bg_color: #565656;
+    --second_color: #333333;
+    --main_color: #141414;
+    --line_width: 0%;
+}
+body{
+    background-color: var(--bg_color);
+}
+.content{
+    width: min(100% - 20px, var(--size));
+    height: calc(100vh - 20px);
+    background-color: var(--main_color);
+    margin-inline: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+.add_new{
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: var(--second_color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+.add_new form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 50px);
+}
+.add_new form input[type=text]{
+    width: 100%;
+    height: calc(100% - 20px);
+    outline: none;
+    text-align: center;
+    background-color: var(--second_color);
+    border: solid var(--bg_color) 1px;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+}
+.add_new form input[type=submit]{
+    width: 100px;
+    height: calc(100% - 17px);
+    border-radius: 0px 10px 10px 0px;
+    border: solid var(--bg_color) 1px;
+    outline: none;
+    color: white;
+    background-color: var(--bg_color);
+    transition: all .2s ease-in-out;
+}
+.add_new form input[type=submit]:hover{
+    background-color: #777777;
+}
+.plus{
+    background: url(../resources/plus-circle.png);
+    width: 40px;
+    height: 40px;
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main_field{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.field{
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    height: 50px;
+    background-color: var(--second_color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.field .span{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 80%;
+    
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.spann{
+    text-overflow: none;
+    overflow: none;
+    white-space: none;
+}
+.radio{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: solid white 2px;
+    position: relative;
+}
+.radio .chek{
+    width: 9px;
+    height: 9px;
+    display: none;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.line{
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in;
+}
+.del_butt{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg_color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.del_butt:hover{
+    background-color: #777777;
+}
+.more_info{
+    position: absolute;
+    z-index: 100;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-inline: auto;
+    display: none;
+    background-color: var(--second_color);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: normal;
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 111;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg_color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    background-color: #777777;
+}
