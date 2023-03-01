@@ -1,7 +1,13 @@
-# Это ToDo веб приложение
+# Это ToDo Web-приложение
 
 #### GitHub Pages для превью просмотра
 https://dkfight.github.io/To_Do/todo/html/index.html
+
+### Использованные ресурсы и технологии
+- html для разметки страницы
+- css для стилей и расположения html элементов
+- js для функционала и логики web приложения
+- WebSql database для хранения задач
 
 ### Внешний вид и пара задач
 ![image](https://user-images.githubusercontent.com/116903571/222213108-9447de54-8de9-4bb0-ac3f-9c24a5e60d4b.png)
